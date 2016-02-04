@@ -8,7 +8,7 @@ export default class ScrollChecker {
         var self = this;
         self.settings = $.extend({}, self.defaults, options);
         self._adjustClass();
-        $(window).on('scroll', bsp_utils.throttle(100,() => {
+        $(window).on('scroll', bsp_utils.throttle(self.settings.throttle,() => {
             self._adjustClass();
         }));
     }
@@ -44,5 +44,6 @@ ScrollChecker.prototype.defaults = {
     classScrolling: 'bsp-scrolling',
     classBottom: 'bsp-scrolling-bottom',
     offsetBottom: 0,
-    offsetTop: 0
+    offsetTop: 0,
+    throttle: 100
 };
