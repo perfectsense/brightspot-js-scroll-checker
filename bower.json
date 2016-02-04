@@ -1,0 +1,19 @@
+{
+  "authors": [ {
+    "homepage": "http://www.perfectsensedigital.com/",
+    "name": "Perfect Sense Digital"
+  } ],
+  "dependencies": {
+    "jquery": ">=1.7.0",
+    "bsp-utils": ">=2.0.1"
+  },
+  "homepage": "https://github.com/perfectsense/brightspot-js-scroll-checker",
+  "keywords": [
+    "brightspot",
+    "jquery"
+  ],
+  "license": "MIT",
+  "main": "bsp-scroll-checker.js",
+  "name": "bsp-scroll-checker",
+  "version": "0.0.1"
+}
