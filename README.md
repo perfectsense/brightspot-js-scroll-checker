@@ -10,8 +10,13 @@ It's recommended that this plugin is used inside of ES6 space and using the brig
 
 # Options
 
+		new ScrollChecker({
+			offsetTop : 200
+		});
+
 *	**bottomMinHeight** - defaults to `768`, the minimum height the window has to be for the classBottom class to be added to the body element
 *	**classScrolling** - defaults to `bsp-scrolling`, class added to the body element when the user has scrolled below the top of the page
 *	**classBottom** - defaults to `bsp-scrolling-bottom`, class added to the body element when the user has scrolled to the bottom of the page
-*	**offsetBottom** - defaults to `0`, specifying a number higher than 0 will cause the classBottom class to be added to the body element before the user scrolls all the way to the bottom of the page
+*	**offsetBottom** - defaults to `0`, specifying a number higher than 0 will cause the classBottom class to be added to the body element when the users scrolls within this many pixels of the bottom of the page
 *	**offsetTop** - defaults to `0`, specifying a number higher than 0 will cause the classScrolling class to be added to the body element only after the user has scrolled this many pixels
+*	**throttle** - defaults to `100`, milleseconds that the update function should be throttled on scroll events
