@@ -1,4 +1,10 @@
-# Installation
+# brightspot-js-scroll-checker
+
+Responds to a user scrolling on the page by adding/removing classes from the body element.
+
+By default, will add the `bsp-scrolling` class to the body element when the user scrolls past the top of the page and the `bsp-scrolling-bottom` class when a user hits the bottom of the page.
+
+## Installation
 
 It's recommended that this plugin is used inside of ES6 space and using the brightspot-js-grunt task, as demonstrated in the [Brightspot Base](https://github.com/perfectsense/brightspot-base) project
 - Pull in via your bower.json. It will be automatically included into your project by brightspot-js-grunt task
@@ -8,7 +14,7 @@ It's recommended that this plugin is used inside of ES6 space and using the brig
 		import ScrollChecker from 'bsp-scroll-checker';
 		new ScrollChecker();
 
-# Options
+## Options
 
 		new ScrollChecker({
 			offsetTop : 200
